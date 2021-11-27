@@ -24,7 +24,7 @@ class Category(models.Model):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'articles/')
+    image = models.ImageField(upload_to = 'articles/') #need to download pillow for this
     image_name = models.CharField(max_length=100)
     image_description = models.TextField()
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
