@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picasso Gallery</title>
+    <title>CyberDeck</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
@@ -15,7 +15,6 @@
 
 <!--NAVBAR-->
 <div class="nav-bar" style="height: 80px;background-color: black;">
-    <a href="">Contact</a>
     <a href="{%url 'search_results'%}">Search</a>
     <a href="{%url 'mapicha'%}">Gallery</a>
     <a href="{%url 'karibu'%}">Home</a>
@@ -25,7 +24,7 @@
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">CyberDeck</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">Articles that are available</p>
             </div>
             <div class="row photos">
                 {%for image in images%}
