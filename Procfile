@@ -1,1 +1,1 @@
-web: gunicorn cyber.wsgi
+web: gunicorn cyber.wsgi --log-file -
