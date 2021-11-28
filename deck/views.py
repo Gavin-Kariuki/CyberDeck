@@ -5,7 +5,7 @@ from . models import Image
 
 
 # Create your views here.
-def welcome(request):
+def karibu(request):
     return render(request, 'index.html')
 
 def mapicha(request):
@@ -21,7 +21,7 @@ def picha(request,image_id):
 
 def search_results(request):
     if 'tafutapicha' in request.GET and request.GET['tafutapicha']: #tafutapicha is what i will name my search element tag in the templates
-        category = request.GET.get('imagesearch')
+        category = request.GET.get('tafutapicha')
         images_searched = Image.search_by_category(category)
         message = f"{category}"
         print(images_searched)
